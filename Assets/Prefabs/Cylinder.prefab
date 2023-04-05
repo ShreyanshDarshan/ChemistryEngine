@@ -73,7 +73,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &71374981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -192,7 +192,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: e60bba3c3d27b5748958f9971c7da3c3, type: 2}
   m_TargetDisplay: 0
@@ -223,7 +223,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &606746745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,7 +311,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &662484504
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,7 +461,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &835482168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -600,7 +600,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -631,7 +631,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &2018359238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -891,7 +891,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -922,7 +922,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &1436763448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,7 +1131,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1162,7 +1162,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &836542424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &1294117198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,7 +1721,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1752,7 +1752,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &2026625502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1840,7 +1840,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: e60bba3c3d27b5748958f9971c7da3c3, type: 2}
   m_TargetDisplay: 0
@@ -1871,7 +1871,7 @@ MonoBehaviour:
   depth_material: {fileID: 2100000, guid: 704cd1205c972bd4d954490fde654164, type: 2}
   fluidLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 64
 --- !u!114 &643808085
 MonoBehaviour:
   m_ObjectHideFlags: 0
