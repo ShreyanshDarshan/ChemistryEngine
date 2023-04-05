@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4461836560663085430}
   - component: {fileID: 1028362312}
   m_Layer: 0
-  m_Name: WideCapParticles
+  m_Name: ThinCapParticles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -666,7 +666,7 @@ ParticleSystem:
     serializedVersion: 6
     enabled: 1
     type: 4
-    angle: 2
+    angle: 1
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
     radiusThickness: 1
@@ -752,7 +752,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 0.01
+      value: 0.005
       mode: 0
       spread: 0
       speed:
