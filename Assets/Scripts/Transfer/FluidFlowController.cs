@@ -9,6 +9,8 @@ public class FluidFlowController : MonoBehaviour
     [SerializeField] private Transform surface;
     [SerializeField] private GameObject thinCapEmitter;
     [SerializeField] private GameObject wideCapEmitter;
+    public float totalFluidOutflowRate = 0.0f;
+    public float totalFluidInflowRate = 0.0f;
     Transform[] particleEmitters;
     public float flowRateMultiplier = 300.0f;
     public float startSpeedMultiplier = 30.0f;
@@ -20,6 +22,9 @@ public class FluidFlowController : MonoBehaviour
         GameObject wideCapInstantiated = Instantiate(wideCapEmitter, transform.position, transform.rotation);
         wideCapInstantiated.transform.parent = transform;
         wideCapInstantiated.GetComponent<OverflowDetector>().surface = surface;
+        var ps = wideCapInstantiated.GetComponent<ParticleSystem>();
+        var shape = ps.shape;
+        shape.radius = radius;
         for (int i = 0; i < numEmitters; i++)
         {
             float angle = i * Mathf.PI * 2 / numEmitters;
@@ -34,6 +39,7 @@ public class FluidFlowController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        totalFluidOutflowRate = 0.0f;
         foreach (Transform emitter in transform)
         {
             GameObject emitterObject = emitter.gameObject;
@@ -48,6 +54,8 @@ public class FluidFlowController : MonoBehaviour
             main.startSpeedMultiplier = Mathf.Clamp(overflowDetector.distanceFromSurface * startSpeedMultiplier, 0.0f, 30.0f);
             Debug.Log("Emission rate: " + emission.rateOverTimeMultiplier);
             Debug.Log("Start speed: " + main.startSpeedMultiplier);
+
+            totalFluidOutflowRate += emission.rateOverTimeMultiplier;
 
             // ps.emission = emission;
             // ps.Play();
