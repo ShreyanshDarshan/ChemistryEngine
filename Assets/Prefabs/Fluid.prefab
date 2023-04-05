@@ -124,9 +124,10 @@ GameObject:
   - component: {fileID: 8463079323850706382}
   - component: {fileID: 7720805007143180561}
   - component: {fileID: 9172442182680284404}
+  - component: {fileID: 7134663155022699703}
   m_Layer: 0
   m_Name: BaseMesh
-  m_TagString: Untagged
+  m_TagString: Fluid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,6 +227,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   volumeCapacity: 0
   volumeOccupied: 0
+--- !u!114 &7134663155022699703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8463079323850706381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 579cff45bb845ee4e9d7e128ff8032ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  compositionManager: {fileID: 0}
+  material: {fileID: 0}
+  meshRenderer: {fileID: 0}
+  chemicalsList: {fileID: 0}
 --- !u!1 &8463079324787513863
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +364,7 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
