@@ -31,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 17.811}
 --- !u!114 &8866441433339431526
 MonoBehaviour:
@@ -50,8 +50,10 @@ MonoBehaviour:
   surface: {fileID: 0}
   thinCapEmitter: {fileID: 4461836560663085431, guid: e71103157baa24c42bcf86e42f344dae, type: 3}
   wideCapEmitter: {fileID: 4461836560663085431, guid: 7c0d411a63253fc4da17823c76f71fe0, type: 3}
-  flowRateMultiplier: 300
+  totalFluidOutflowRate: 0
+  flowRateMultiplier: 1800
   startSpeedMultiplier: 20
+  compositionManager: {fileID: 0}
 --- !u!135 &8866441433339431521
 SphereCollider:
   m_ObjectHideFlags: 0

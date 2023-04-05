@@ -10,10 +10,11 @@ public class FluidFlowController : MonoBehaviour
     [SerializeField] private GameObject thinCapEmitter;
     [SerializeField] private GameObject wideCapEmitter;
     public float totalFluidOutflowRate = 0.0f;
-    public float totalFluidInflowRate = 0.0f;
     Transform[] particleEmitters;
     public float flowRateMultiplier = 300.0f;
     public float startSpeedMultiplier = 30.0f;
+    public CompositionManager compositionManager;
+    static public float dropVolume = 0.000016f;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,8 +53,8 @@ public class FluidFlowController : MonoBehaviour
             emission.rateOverTimeMultiplier = Mathf.Clamp(overflowDetector.distanceFromSurface * flowRateMultiplier, 0.0f, 30.0f);
             var main = ps.main;
             main.startSpeedMultiplier = Mathf.Clamp(overflowDetector.distanceFromSurface * startSpeedMultiplier, 0.0f, 30.0f);
-            Debug.Log("Emission rate: " + emission.rateOverTimeMultiplier);
-            Debug.Log("Start speed: " + main.startSpeedMultiplier);
+            // Debug.Log("Emission rate: " + emission.rateOverTimeMultiplier);
+            // Debug.Log("Start speed: " + main.startSpeedMultiplier);
 
             totalFluidOutflowRate += emission.rateOverTimeMultiplier;
 
@@ -69,5 +70,9 @@ public class FluidFlowController : MonoBehaviour
             //     // ps.Pause();
             // }
         }
+        totalFluidOutflowRate *= dropVolume;
+
+        if (compositionManager != null)
+            compositionManager.volumeOccupied -= totalFluidOutflowRate * Time.deltaTime;
     }
 }

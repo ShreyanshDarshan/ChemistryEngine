@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4461836560663085429}
   - component: {fileID: 4461836560663085430}
   - component: {fileID: 1028362312}
+  - component: {fileID: 307675817529680399}
   m_Layer: 0
   m_Name: ThinCapParticles
   m_TagString: Untagged
@@ -32,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!198 &4461836560663085429
 ParticleSystem:
@@ -4844,3 +4845,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surface: {fileID: 0}
   distanceFromSurface: 0
+--- !u!114 &307675817529680399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4461836560663085431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8058d1a24a69024c90a104516aab8bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  part: {fileID: 0}

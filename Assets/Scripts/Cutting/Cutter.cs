@@ -34,9 +34,9 @@ public class Cutter : MonoBehaviour
 
         //Getting and destroying all original colliders to prevent having multiple colliders
         //of different kinds on one object
-        var originalCols = originalGameObject.GetComponents<Collider>();
-        foreach (var col in originalCols)
-            Destroy(col);
+        // var originalCols = originalGameObject.GetComponents<Collider>();
+        // foreach (var col in originalCols)
+        //     Destroy(col);
 
         // originalGameObject.GetComponent<MeshFilter>().mesh = finishedLeftMesh;
         // var collider = originalGameObject.AddComponent<MeshCollider>();
