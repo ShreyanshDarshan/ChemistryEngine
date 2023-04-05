@@ -38,13 +38,13 @@ public class React : MonoBehaviour
             }
         }
 
-        if (compositionManager.composition["NaOH"] > 0 && compositionManager.composition["Phenolphthalein"] > 0)
+        // if (compositionManager.composition["NaOH"] > 0 && compositionManager.composition["Phenolphthalein"] > 0)
         {
             // material.CopyPropertiesFromMaterial(meshRenderer.material);
-            material.color = chemicalsList.NaOHPhenolphthalineColor;//Color.Lerp(chemicalsList.H2OColor, chemicalsList.NaOHPhenolphthalineColor, compositionManager.composition["NaOH"]) / compositionManager.volumeCapacity;
+            material.color = Color.Lerp(chemicalsList.H2OColor, chemicalsList.NaOHPhenolphthalineColor, compositionManager.composition["NaOH"] / compositionManager.volumeOccupied);
             meshRenderer.material = material;
         }
 
-
+        Debug.Log("% NaOH: " + compositionManager.composition["NaOH"] / compositionManager.volumeOccupied);
     }
 }

@@ -1733,6 +1733,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 455437245, guid: 9830d77854207ed47976f62a005bf5ac, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 455437246, guid: 9830d77854207ed47976f62a005bf5ac, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -2393,6 +2397,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 755317074, guid: 34edf6f811901d745ba9f16663a5342e, type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 755317075, guid: 34edf6f811901d745ba9f16663a5342e, type: 3}
       propertyPath: m_InteractionManager
       value: 
@@ -2430,6 +2438,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8384428794917977871, guid: 34edf6f811901d745ba9f16663a5342e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8463079324706123867, guid: 34edf6f811901d745ba9f16663a5342e, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
